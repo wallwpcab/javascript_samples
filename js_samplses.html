@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>My First JavaScript</h2>
+    
+    <button type="button"  onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+<p id="demo"></p>
+ <script type="text/javascript"> let text = "Visit W3Schools!";  let n = text.search("W3Schools");document.getElementById("demo").innerHTML = n; </script>
+ <script type = "text/javascript">   let text = "Is this all there is?"; let result = text.match(/[h]/g); document.getElementById("demo").innerHTML = result; </script>
+<p id="p01">The best things in life are free!</p>
+<p id="demo"></p>
+<script>let text = document.getElementById("p01").innerHTML; const pattern = /e/;document.getElementById("demo").innerHTML = pattern.test(text);
+</script>
+
+
+
+
+
+<script>
+function myFunction() {
+  let text = document.getElementById("demo").innerHTML;
+  document.getElementById("demo").innerHTML = text.replace("Microsoft","W3Schools");
+}
+</script>
+
+
+
+
+
+<h2>JavaScript While Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+let i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html> 
